@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+  <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+  <script src="../argomenti.js"></script>
+  <title>Compiti per casa</title>
+</head>
+
+<body>
+  <h1>
+    <span id="nav-prev" class="nav-arrow">◃</span>
+    Scheda <span id="scheda-num">1</span>
+    <span id="nav-next" class="nav-arrow">▹</span>
+  </h1>
+
+  <br>
+
+  <h3 class="green">Esercizio</h3>
+  <br>
+  <div>
+    Consideriamo la funzione
+    \[
+    f(x) = \dfrac{\sqrt{-x^2 + x + 2}}{3x - 1}
+    \]
+    <ol type="A" style="font-weight: bold;">
+      <li>
+        <span style="font-weight: normal;">
+          Individuare il <b>dominio</b> della funzione \(f\).
+        </span>
+      </li>
+      <br>
+      <li>
+        <span style="font-weight: normal;">
+          Studiare il <b>segno</b> della funzione \(f\) al variare del valore di \(x\).
+        </span>
+      </li>
+      <br>
+      <li>
+        <span style="font-weight: normal;">
+          Studiare il comportamento della frontiera in corrispondenza della frontiera del dominio.
+        </span>
+      </li>
+    </ol>
+
+    <br>
+    <br>
+
+
+    <button id="hintAAAAAAA(1)-button" onclick="showHint(`AAAAAAA(1)`)">Soluzione</button>
+    <div id="hintAAAAAAA(1)" class="hint gray" style="display: none;">
+      <b class="gray">Soluzione</b>
+      <br>
+      Il dominio di \(f\) è l'insieme
+      \[
+      D = \Big[-1\,,\,\,\dfrac{1}{3}\Big) \cup \Big(\dfrac{1}{3}\,,\,\,2\Big]
+      \]
+      Per quanto riguarda il segno la funzione
+      <br>
+      <ul>
+        <li>
+          assume valori positivi per \(x \in \Big(\dfrac{1}{3}\,,\,\,2\Big)\)
+        </li>
+        <br>
+        <li>
+          assume valori negativi per \(x \in \Big(-1\,,\,\,\dfrac{1}{3}\Big)\)
+        </li>
+        <br>
+        <li>
+          si annulla per \(x = -1\,\,\) oppure \(x = 2\)
+        </li>
+      </ul>
+      <br>
+      <br>
+      Infine, troviamo che la funzione ha come asintoto verticale la retta di equazione \(x = \dfrac{1}{3}\).
+      Si ha
+      \[
+      \lim_{x \to \frac{1}{3}^{\pm}} f(x) = \pm \infty
+      \]
+    </div>
+
+    <br>
+
+    <button id="hintAAAAAAA(2)-button" onclick="showHint(`AAAAAAA(2)`)">Svolgimento</button>
+    <div id="hintAAAAAAA(2)" class="hint gray" style="display: none;">
+      <b class="gray">Svolgimento</b>
+      <br>
+      <iframe style="width: 100%" src="https://www.youtube.com/embed/PUlayPISPp8?si=rlkvbCIPlqD-_Fy5"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+      <br>
+      <iframe style="width: 100%" src="https://www.youtube.com/embed/u5eTVc945tg?si=dKbRdJGpmWiqYGJm"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+  </div>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <h3 class="green">Esercizio</h3>
+  <br>
+  <div>
+    Consideriamo la funzione
+    \[
+    f(x) = \dfrac{3x^2 - 1}{-x^2 + 4}
+    \]
+    <ol type="A" style="font-weight: bold;">
+      <li>
+        <span style="font-weight: normal;">
+          Individuare il dominio di \(f\).
+        </span>
+      </li>
+      <br>
+      <li>
+        <span style="font-weight: normal;">
+          Studiare il segno di \(f\).
+        </span>
+      </li>
+      <br>
+      <li>
+        <span style="font-weight: normal;">
+          Consideriamo la funzione
+          \[
+          g(x) = \sqrt{f(x) - 1}
+          \]
+          Stabilire il domino della funzione \(g\)
+        </span>
+      </li>
+    </ol>
+  </div>
+
+  <br>
+  <br>
+
+  <button id="hintAAAAAAA(3)-button" onclick="showHint(`AAAAAAA(3)`)">Soluzione</button>
+  <div id="hintAAAAAAA(3)" class="hint gray" style="display: none;">
+    <b class="gray">Soluzione</b>
+    <br>
+    Il dominio della funzione \(f\) è 
+    \[
+      D=(-\infty ,-2)\cup (-2,2)\cup (2,+\infty )
+    \]
+    La funzione è 
+    <br>
+    <br>
+    <ul>
+      <li>
+         positiva per \(x \in \Big(-2, -\frac{\sqrt{3}}{3}\Big) \cup \Big(\frac{\sqrt{3}}{3}, 2\Big)\)
+      </li>
+      <br>
+      <li>
+        negativa per \(x \in \Big(-\frac{\sqrt{3}}{3}\,,\,\, \frac{\sqrt{3}}{3}\Big)\)
+      </li>
+      <br>
+      <li>
+        nulla per \(x = \pm\dfrac{\sqrt{3}}{3}\)
+      </li>
+    </ul>
+    <br>
+    Svolgendo i calcoli troviamo che la funzione \(g\) è 
+    \[
+      g(x) =  \sqrt{\frac{4x^2 - 5}{-x^{2}+4}}
+    \]
+    il suo dominio è 
+    \[
+      D = \Big(-2, -\frac{\sqrt{5}}{2}\Big] \cup \Big[\frac{\sqrt{5}}{2}, 2\Big)
+    \]
+  </div>
+
+  <br>
+
+  <button id="hintAAAAAAA(4)-button" onclick="showHint(`AAAAAAA(4)`)">Svolgimento</button>
+  <div id="hintAAAAAAA(4)" class="hint gray" style="display: none;">
+    <b class="gray">Svolgimento</b>
+    <br>
+    <iframe style="width: 100%" src="https://www.youtube.com/embed/xHi2Yb8FwDM?si=lBUhkfyp8hbmmF2s"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+    <br>
+    <iframe style="width: 100%" src="https://www.youtube.com/embed/EdLbs2QQses?si=mKbD25Ivq1c7Jzeo"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+
+  </div>
+
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <script src="../../js/hintAndSlide.js"></script>
+  <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+  <script src="../../js/motoreQuizVideo.js"></script>
+
+  <br>
+  <br>
+
+
+
+
+</body>
+
+</html>
