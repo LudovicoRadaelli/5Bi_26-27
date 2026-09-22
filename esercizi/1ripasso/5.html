@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">5</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="green">Esercizio</h3><br><div>
+        Studiare <b>dominio</b>, <b>segno</b> e <b>comportamento agli estremi del dominio</b> della funzione
+        \[
+        f(x) = \dfrac{x^2 -1}{x}
+        \]
+
+        <br>
+
+        <button id="hintLtzRwbBkjz-button" onclick="showHint(`LtzRwbBkjz`)">Soluzione</button>
+        <div id="hintLtzRwbBkjz" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Il <b>dominio</b> della funzione è
+            \[
+            D = (-\infty\,,\,\,0) \cup (0\,,\,\,+\infty)
+            \]
+            Il <b>segno</b> della funzione varia in questo modo:
+            <br>
+            <br>
+            <ul>
+                <li>
+                    \(f(x) \gt 0\,\,\) per \(\,\,x \in (-1\,,\,\,0) \cup (1\,,\,\,+\infty)\)
+                </li>
+                <br>
+                <li>
+                    \(f(x) \gt 0\,\,\) per \(\,\,x \in (-\infty\,,\,\,-1) \cup (0\,,\,\,1)\)
+                </li>
+                <br>
+                <li>
+                    \(f(x) = 0\,\,\) per \(\,\,x = \pm1\)
+                </li>
+            </ul>
+            <br>
+            <br>
+            Il <b>comportamento agli estremi del dominio</b> è il seguente:
+            \[
+            \begin{align*}
+            &amp;\lim_{x \to -\infty} f(x) = -\infty
+            \\\\
+            &amp;\lim_{x \to 0^{-}} f(x) = +\infty
+            \\\\
+            &amp;\lim_{x \to +\infty} f(x) = -\infty
+            \\\\
+            &amp;\lim_{x \to 0^{+}} f(x) = +\infty
+            \end{align*}
+            \]
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3><br><div>
+        Studiare <b>dominio</b>, <b>segno</b> e <b>comportamento agli estremi del dominio</b> della funzione
+        \[
+        f(x) = \dfrac{x + 1}{ln(x)}
+        \]
+
+        <br>
+
+        <button id="hintfaLSEuWxSU-button" onclick="showHint(`faLSEuWxSU`)">Soluzione</button>
+        <div id="hintfaLSEuWxSU" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Il <b>dominio</b> della funzione è
+            \[
+            D = (0\,,\,\,1) \cup (1\,,\,\,+\infty)
+            \]
+            Il <b>segno</b> della funzione varia in questo modo:
+            <br>
+            <br>
+            <ul>
+                <li>
+                    \(f(x) \gt 0\,\,\) per \(\,\,x \in  (1\,,\,\,+\infty)\)
+                </li>
+                <br>
+                <li>
+                    \(f(x) \lt 0\,\,\) per \(\,\,x \in (0\,,\,\,1)\)
+                </li>                
+            </ul>
+            <br>
+            <br>
+            Il <b>comportamento agli estremi del dominio</b> è il seguente:
+            \[
+            \begin{align*}
+            &amp;\lim_{x \to 0^{+}} f(x) = 0^{-}
+            \\\\
+            &amp;\lim_{x \to 1^{-}} f(x) = -\infty
+            \\\\
+            &amp;\lim_{x \to 1^{+}} f(x) = +\infty
+            \\\\
+            &amp;\lim_{x \to +\infty} f(x) = +\infty
+            \end{align*}
+            \]
+        </div>
+    </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
