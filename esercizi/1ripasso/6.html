@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">6</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Variazione di una funzione</h3>
+  <div class="esempi-container">
+
+    <b style="font-size: 1.3rem;">Variazione assoluta</b>
+
+    <div class="grayBackground">
+      La variazione assoluta di una fuzione da \(x = \color{red}{}a\) ad \(x = \color{blue}{}b\) è la quantità
+      \[ f(\color{blue}{}b\color{black}{}) - f(\color{red}{}a\color{black}{}) \]
+    </div>
+
+    <br>
+    La variazione assoluta ci dice quanto varia l'<b>output</b> di una funzione.
+    
+    <br>
+    <br>
+
+    <b>Esempio</b>
+
+    <br>
+    Consideriamo la funzione \(f(x) = 3x^2\).
+    Calcoliamo la variazione di \(f\) da \(x = \color{red}{}2\) a \(x = \color{blue}{}5\).
+    \[
+    \begin{align}
+    f(\color{blue}{}5\color{black}{}) - f(\color{red}{}2\color{black}{})
+    &amp;= 3 \cdot \color{blue}{}5\color{black}{}^2 - 3 \cdot\color{red}{}2\color{black}{}^2 =
+    \\\\
+    &amp;= 75 - 12
+    \\\\
+    &amp;= 63
+    \end{align}
+    \]
+    Questo significa che se ci spostiamo dall'input \(x = \color{red}{}2\) all'input \(x = \color{blue}{}5\) l'output
+    della funzione \(f\)
+    aumenta di \(63\) unità.
+
+    <br>
+    <br>
+
+    <b>Intepretazione grafica</b>
+    <br>
+    Possiamo rappresentare graficamente la variazione assoluta di una funzione
+    attraverso una freccia sull'asse delle \(y\). Questa rende evidente se il valore della funzione da \(a\) a \(b\)
+    è aumentato o diminuito e di quanto.
+    <br>
+    <br>
+    <img src="img/img_6_1.png" alt="">
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <b style="font-size: 1.3rem;">Variazione relativa</b>
+
+    <div class="grayBackground">
+      La variazione assoluta di una fuzione da \(x = \color{red}{}a\) ad \(x = \color{blue}{}b\) è la quantità
+      \[ \frac{f(\color{blue}{}b\color{black}{}) - f(\color{red}{}a\color{black}{})}{\color{blue}{}b \color{black}{}- \color{red}{}a} \]
+    </div>
+
+    <br>
+
+    La variazione assoluta ci dice quanto varia l'<b>output</b> di una funzione <b>in rapporto alla variazione dell'input</b>.
+
+    <br>
+    <br>
+
+    <b>Esempio</b>
+
+    <br>
+    Consideriamo ancora la funzione \(f(x) = 3x^2\).
+    Calcoliamo la variazione di \(f\) da \(x = \color{red}{}2\) a \(x = \color{blue}{}5\).
+    \[
+    \begin{align}
+    \dfrac{f(\color{blue}{}5\color{black}{}) - f(\color{red}{}2\color{black}{})}{\color{blue}{}5 \color{black}{}\color{red}{}2} 
+    &amp;= \dfrac{3 \cdot \color{blue}{}5\color{black}{}^2 - 3 \cdot\color{red}{}2\color{black}{}^2}{\color{blue}{}5 - \color{red}{}2} =
+    \\\\
+    &amp;= \dfrac{75 - 12}{5 - 2} 
+    \\\\
+    &amp;= \dfrac{63}{3} = 21
+    \end{align}
+    \]    
+
+    <br>
+    <br>
+
+    <b>Intepretazione grafica</b>
+    <br>
+    <br>
+    <ul>
+      <li>
+      L'incremento dell'output, \(f(b) - f(a)\) è rappresentato dalla freccia verticale.
+    </li>
+    <br>
+    <li>
+      L'incremento dell'input, \(b - a\) è rappresentato dalla freccia orizzontale.
+    </li>
+    <br>
+    <li>
+      Il loro rapporto \(\dfrac{f(b) - f(a)}{b - a}\) è il coefficiente angolare della retta secante i due 
+    punti del grafico di \(f\).
+    </li>
+    </ul>
+    <br>
+    <br>
+    <img src="img/img_6_2.png" alt="">
+  </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3><br><div>
+        Consideriamo la funzione
+        \[
+        f(x) = ln(x - 2) - ln(x + 2)
+        \]
+        Individuarne il <b>dominio</b>, studiarne il <b>segno</b> al variare della \(x\) e studiarne il comportamento
+        in corrispondenza degli <b>estremi del dominio</b>.
+
+        <br>
+        <br>
+
+        <button id="hintSQWSEQSUhf-button" onclick="showHint(`SQWSEQSUhf`)">Soluzione</button>
+        <div id="hintSQWSEQSUhf" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Il <b>dominio</b> della funzione
+            \[
+            D = (2\,,\,\,+\infty)
+            \]
+            <br>
+            La funzione assume valore negativo per \(x \in D\)
+
+            <br>
+            <br>
+
+            Si ha che
+            <br>
+            <br>
+
+            <ul>
+                <li>
+                    \(\displaystyle \lim_{x \to 2^{^+}} f(x) = -\infty\)
+                </li>
+                <br>
+                <li>
+                    \(\displaystyle \lim_{x \to +\infty} f(x) = 0^{^-}\)
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3><br><div>
+        Consideriamo la funzione
+        \[
+        f(x) = e^{\sqrt{\frac{2 - x}{-4x + 12}}}
+        \]
+        Individuarne il <b>dominio</b>, studiarne il <b>segno</b> al variare della \(x\) e studiarne il comportamento
+        in corrispondenza degli <b>estremi del dominio</b>.
+
+        <br>
+        <br>
+
+        <button id="hintLmekMHTGlK-button" onclick="showHint(`LmekMHTGlK`)">Soluzione</button>
+        <div id="hintLmekMHTGlK" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Il <b>dominio</b> della funzione
+            \[
+            D = (-\infty\,,\,\,2] \cup (3\,,\,\,+\infty)
+            \]
+            <br>
+            La funzione assume valore per ogni \(x \in D\).
+            
+            <br>
+            <br>
+
+            Si ha che
+            <br>
+            <br>
+
+            <ul>
+                <li>
+                    \(\displaystyle \lim_{x \to \pm\infty} f(x) = e^{\sqrt{\frac{1}{4}}} = \sqrt{e} (\approx 1.64...)\)
+                </li>
+                <br>                
+                <li>
+                    \(\displaystyle \lim_{x \to  3^{^+}} f(x) = +\infty\)
+                </li>                
+            </ul>
+        </div>
+    </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
