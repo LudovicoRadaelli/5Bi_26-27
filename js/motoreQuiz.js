@@ -1,67 +1,3 @@
-/*    
-<div class="quiz">
-  <!--
-    Attributi FACOLTATIVI da mettere sul <div class="quiz"> qui sopra:
-
-      data-titolo-finale="Ben fatto!"
-          intestazione della schermata finale (default: "Quiz completato!")
-
-      data-messaggio-finale="Ottimo lavoro, vai avanti così!"
-          testo della schermata finale
-
-      data-feedback-errore="Non ci siamo, prova un'altra risposta"
-          messaggio per TUTTE le risposte sbagliate del quiz
-          (default: "Non è corretta, riprova")
-
-      data-no-shuffle
-          mantiene le risposte nell'ordine in cui le scrivi
-          (di default vengono mescolate a ogni tentativo)
-  -->
-
-  <!-- ─────────── DOMANDA (duplica questo blocco per aggiungerne) ─────────── -->
-  <div class="quiz-domanda">
-    <div class="quiz-testo">Scrivi qui il testo della domanda. Puoi usare formule: \(f(x)=x^2+1\).</div>
-    <ul class="quiz-opzioni">
-      <li>Prima risposta (sbagliata)</li>
-      <li data-giusta>Seconda risposta (giusta)</li>   <!-- data-giusta = quella corretta -->
-      <li>Terza risposta (sbagliata)</li>
-    </ul>
-  </div>
-
-  <!-- ─────────── DOMANDA con feedback personalizzato ─────────── -->
-  <div class="quiz-domanda">
-    <div class="quiz-testo">Quanto vale \(2+2\)?</div>
-    <ul class="quiz-opzioni">
-      <li>\(3\)</li>
-      <!-- data-feedback sulla risposta giusta = messaggio al posto di "Corretto!" -->
-      <li data-giusta data-feedback="Esatto: \(2+2=4\).">\(4\)</li>
-      <!-- data-feedback su una risposta sbagliata = messaggio dedicato a quell'errore -->
-      <li data-feedback="Attenzione al calcolo, riprova.">\(5\)</li>
-    </ul>
-  </div>
-
-  <!-- ─────────── DOMANDA vuota da compilare ─────────── -->
-  <div class="quiz-domanda">
-    <div class="quiz-testo"> </div>
-    <ul class="quiz-opzioni">
-      <li> </li>
-      <li data-giusta> </li>
-      <li> </li>
-    </ul>
-  </div>
-
-</div>*/
-
-
-
-
-
-
-
-
-
-
-
 /* ============================================================
    Quiz — file unico (stile + motore)
    ------------------------------------------------------------
@@ -290,10 +226,41 @@
   var DEFAULT_FINE_TESTO  = "Hai risposto correttamente a tutte le domande. Ottimo lavoro!";
   var LETTERE = "ABCDEFGHIJKL".split("");
 
+  /* Compila le formule MathJax su un elemento.
+     Se MathJax non è ancora pronto (viene caricato in async), attende
+     e riprova: così anche le risposte "complesse" ricostruite dal widget
+     vengono compilate correttamente, senza dipendere dalla tempistica. */
   function typeset(el) {
-    if (window.MathJax && MathJax.typesetPromise) {
-      MathJax.typesetPromise([el]).catch(function () {});
+    if (!el) return;
+    var mj = window.MathJax;
+
+    if (mj && mj.typesetPromise) {
+      mj.typesetPromise([el]).catch(function () {});
+      return;
     }
+    if (mj && mj.startup && mj.startup.promise) {
+      mj.startup.promise
+        .then(function () { return MathJax.typesetPromise([el]); })
+        .catch(function () {});
+      return;
+    }
+
+    /* MathJax non ancora caricato: attende la sua comparsa. */
+    var tentativi = 0;
+    var timer = setInterval(function () {
+      var m = window.MathJax;
+      if (m && m.typesetPromise) {
+        clearInterval(timer);
+        m.typesetPromise([el]).catch(function () {});
+      } else if (m && m.startup && m.startup.promise) {
+        clearInterval(timer);
+        m.startup.promise
+          .then(function () { return MathJax.typesetPromise([el]); })
+          .catch(function () {});
+      } else if (++tentativi > 150) {   /* ~15s poi rinuncia */
+        clearInterval(timer);
+      }
+    }, 100);
   }
 
   function shuffle(arr) {
