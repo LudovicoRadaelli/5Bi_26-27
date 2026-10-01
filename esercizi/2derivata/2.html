@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">2</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Strategia per il calcolo delle derivate</h3>
+            <div class="esempi-container">
+                <b>Obiettivo:</b>
+                <br>
+                <div class="grayBorder">
+                    Calcolare la derivata della funzione
+                    \[
+                    f:\quad y = 5ln(x) -7sin(x) + 2x^3
+                    \]
+                </div>
+                <br>
+                Se proviamo un approccio diretto utilizzando la definizione di derivata otteniamo questo limitaccio:
+                <div class="formula">
+                    \[
+                    f'(x) = \lim_{h \to 0} \dfrac{\color{gray}{}\overset{f(x + h)}{\overbrace{\color{black}{}5ln(x + h)
+                    -7sin(x
+                    + h) + 2(x + h)^3}} \color{black}{}- (\color{gray}{}\overset{f(x)}{\overbrace{\color{black}{}5ln(x)
+                    -7sin(x)
+                    + 2x^3}}\color{black}{})}{h}
+                    \]
+                </div>
+                <span class="gray" style="font-size: 0.9rem;">(scorrete per visualizzarlo tutto)</span>
+                <br>
+                <br>
+                Possiamo escogitare un qualche approccio furbo per non dover imbarcarci nella risoluzione di questo
+                limite?
+                Ancora meglio sarebbe se riusissimo ad individuare un metodo di calcolo che bypassi lo svolgimento dei
+                limiti
+                e che sia applicabile ad un'ampia classe di funzioni.
+                <br>
+                <br>
+                Per attaccare questo problema adottiamo il paradigma del
+                <br>
+                <br>
+                <div style="font-size: 2rem; font-variant: small-caps; margin: auto; text-align: center;">
+                    <b>DIVIDI ET IMPERA</b>
+                </div>
+                <br>
+                Ovvero
+                <br>
+                <br>
+                <ul style="list-style: none;">
+                    <li>
+                        <b>Passo 1)\(\,\,\,\)</b> scomponiamo il nostro problema in sottoproblemi più gestibili;
+                    </li>
+                    <br>
+                    <li>
+                        <b>Passo 2)\(\,\,\,\)</b> li risolviamo uno alla volta;
+                    </li>
+                    <br>
+                    <li>
+                        <b>Passo 3)\(\,\,\,\)</b> torniamo ad attaccare il problema iniziale.
+                    </li>
+                </ul>
+
+                <br>
+                <br>
+
+                <b>Passo 1)</b>
+                <br>
+                <div class="grayBorder">
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/kIwMDElgB38?si=8-9yCN9LJFnBW-tV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <br>
+                <br>
+
+                <b>Passo 2)</b>
+                <br>
+                <div class="grayBorder">
+                    Calcoliamo \((ln(x))'\)
+                    <br>
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/bMpMmkZJG3s?si=4mwEgN6R7LjiBuDH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <br>
+                    Calcoliamo \((sin(x))'\)
+                    <br>
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/SRwvk0Nv3T8?si=GrIzQKXyK1Rouy84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <br>
+                    Calcoliamo \((x^3)'\)
+                    <br>
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/3qEUQ_b7Uro?si=LB2mo_fIwxgFfiAn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <br>
+                    Calcoliamo \((c\,f(x))'\)
+                    <br>
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/6g8nBApa4pY?si=7LGAipXjLlv6gs5B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <br>
+                    Calcoliamo \((f(x) + g(x))'\)
+                    <br>
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/OL2CkRSs97E?si=Y4-sJ6YXmUaPISTO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/pSozJK8TLU4?si=SJH-UEQwRAQXqeGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+
+                <br>
+                <br>
+
+                <b>Passo 3)</b>
+                <br>
+                <div class="grayBorder">
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/6Y7_xAIvFKg?si=Mo4aKgNXd1VC9Fyu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
