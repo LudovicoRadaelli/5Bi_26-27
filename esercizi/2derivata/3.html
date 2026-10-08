@@ -21,304 +21,143 @@
 
     <br>
 
-    <h3 class="yellow">Formula di Leibniz (derivata del prodotto di funzioni)</h3>
+    <h3 class="yellow">Derivate fondamentali</h3>
     <div class="esempi-container">
-        <b>Come spiegarlo durnate l'interrogazione</b>
-        <div id="slide-containerrJWOHOyUzo" class="slide-container rJWOHOyUzo grayBorder">
-            <div class="sliderJWOHOyUzo formula">
-                \[
-                \left(f(x) \cdot g(x)\right)' = f'(x)\,g(x) + f(x)\,g'(x)
-                \]
-                La derivata del prodotto di due fuzioni \(f\) e \(g\) è uguale alla derivata di \(f\)
-                per \(g\) più la funzione \(f\) per la derivata della funzione \(g\).
-            </div>
-            <div class="sliderJWOHOyUzo formula">
-                \[
-                \color{blue}{}\left(f(x) \cdot g(x)\right)'\color{black}{} = f'(x)\,g(x) + f(x)\,g'(x)
-                \]
-                <span style="color: blue">La derivata del prodotto di due fuzioni \(f\) e \(g\)</span> è uguale alla
-                derivata di \(f\)
-                per \(g\) più la funzione \(f\) per la derivata della funzione \(g\).
-            </div>
-            <div class="sliderJWOHOyUzo formula">
-                \[
-                \left(f(x) \cdot g(x)\right)' \color{blue}{}=\color{black}{} f'(x)\,g(x) + f(x)\,g'(x)
-                \]
-                La derivata del prodotto di due fuzioni \(f\) e \(g\) <span style="color: blue">è uguale</span> alla
-                derivata di \(f\)
-                per \(g\) più la funzione \(f\) per la derivata della funzione \(g\).
-            </div>
-            <div class="sliderJWOHOyUzo formula">
-                \[
-                \left(f(x) \cdot g(x)\right)'= \color{blue}{}f'(x)\,g(x)\color{black}{} + f(x)\,g'(x)
-                \]
-                La derivata del prodotto di due fuzioni \(f\) e \(g\) è uguale <span style="color: blue">alla derivata
-                    di \(f\)
-                    per \(g\)</span> più la funzione \(f\) per la derivata della funzione \(g\).
-            </div>
-            <div class="sliderJWOHOyUzo formula">
-                \[
-                \left(f(x) \cdot g(x)\right)'= f'(x)\,g(x) \color{blue}{}+\color{black}{} f(x)\,g'(x)
-                \]
-                La derivata del prodotto di due fuzioni \(f\) e \(g\) è uguale alla derivata di \(f\)
-                per \(g\) <span style="color: blue">più</span> la funzione \(f\) per la derivata della funzione \(g\).
-            </div>
-            <div class="sliderJWOHOyUzo formula">
-                \[
-                \left(f(x) \cdot g(x)\right)'= f'(x)\,g(x) + \color{blue}{}f(x)\,g'(x)\color{black}{}
-                \]
-                La derivata del prodotto di due fuzioni \(f\) e \(g\) è uguale alla derivata di \(f\)
-                per \(g\) più <span style="color: blue">la funzione \(f\) per la derivata della funzione \(g\)</span>.
-            </div>
-
-
-        </div>
-        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-            <button id="previousSlide-buttonrJWOHOyUzo" onclick="previousSlide(`rJWOHOyUzo`)">Indietro</button>
-            <button onclick="toggleFullscreen('rJWOHOyUzo')">⛶</button>
-            <button id="nextSlide-buttonrJWOHOyUzo" onclick="nextSlide(`rJWOHOyUzo`)">Avanti</button>
-        </div>
-
+        Di seguito riporto una lista che aggiorneremo volta per volta. Nuovi elementi della lista saranno
+        contraddistinti dal simbolo 🔥.
+        <b>É necessario imparare queste informazioni a memoria. </b>
         <br>
         <br>
-        <br>
+        <ul>
+            <li>
+                \(\left[ln(x)\right]' = \dfrac{1}{x}\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left[sin(x)\right]' = cos(x)\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left[cos(x)\right]' = -sin(x)\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left(e^x\right)' = e^x\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left(ax + b\right)' = a\,\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(\left(x^{\alpha}\right)' = \alpha\,x^{\alpha - 1}\,\,\,\) con \(\alpha \in
+                \mathbb{R}\,\,\,\,\,\)🔥
+            </li>
+            <br>
+            <li>
+                \(
+                \begin{align*}
+                \left[tan(x)\right]' &amp;= \dfrac{1}{cos^2(x)}
+                \\\\
+                &amp;= 1 + tan^2(x)
+                \end{align*}
+                \)🔥
+            </li>
+        </ul>
+    </div>
 
-        <h3 class="green">Esercizio guida</h3>
-        <div id="slide-containerfeFMAuxCXh" class="slide-container feFMAuxCXh grayBorder">
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                \left(2\,sin(x)\,cos(x)\right)' =
-                \]
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                \left(2\,sin(x)\,cos(x)\right)' =
-                \]
-                <div class="gray">
-                    Portiamo la costante moltiplicativa fuori dal segno di derivazione.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                \left(\color{blue}{}2\color{black}{}\,sin(x)\,cos(x)\right)' =
-                \]
-                <div class="gray">
-                    Portiamo la costante moltiplicativa fuori dal segno di derivazione.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                \color{blue}{}2\color{black}{}\,\left(sin(x)\,cos(x)\right)' =
-                \]
-                <div class="gray">
-                    Portiamo la costante moltiplicativa fuori dal segno di derivazione.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = \color{blue}{}2\color{black}{}\,
-                \]
-                <div class="gray">
-                    Portiamo la costante moltiplicativa fuori dal segno di derivazione.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[
-                \]
-                <div class="gray">
-                    Usiamo la regola di Leibniz per svolgere la derivata del prodotto in parentesi.
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di derivazione</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                <b>Derivata del prodotto di una costante per una funzione</b>
+                <br>
+                <br>
+                \(\left(c\,f(x)\right)' = c\,f'(x)\)🔥
+            </li>
+            <br>
+            <li>
+                <b>Derivata delle somma di due funzioni</b>
+                <br>
+                <br>
+                \(\left[f(x) + g(x)\right]' = f'(x) + g'(x)\)🔥
+            </li>
+            <br>
+            <li>
+                <b>Regola di Leibniz</b>
+                <br>
+                <br>
+                \(\left[f(x) \cdot g(x)\right]' = f'(x)\,g(x) + f(x)\,g'(x)\)🔥
+            </li>
+            <br>
+            <li>
+                <b>Derivata del rapporto di due funzioni</b>
+                <br>
+                <br>
+                \(\left[\dfrac{f(x)}{g(x)}\right]' = \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\big[g(x)\big]^2}\)🔥
+            </li>
+            <br>
+            <li>
+                <b>Derivata di una funzione composta</b>
+                <br>
+                <br>
+                \(\big[f\big(g(x)\big)\big]' = f'\big(g(x)\big)\,g'(x)\)🔥
+            </li>
+        </ul>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Svolgere le seguenti derivate:
+        <br>
+        <br>
+        <ol type="A" style="font-weight: bold;">
+            <li>
+                \(
+                \,\,\,\,\,\left[2\,sin(x) - 4\,cos(x)\right]'
+                \)
+
+                <br>
+                <br>
+
+                <button id="hintnudihkquPv-button" onclick="showHint(`nudihkquPv`)">Soluzione</button>
+                <div id="hintnudihkquPv" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
                     \[
-                    \left(f(x) \cdot g(x)\right)' = f'(x)\,g(x) + f(x)\,g'(x)
+                    \left[2\,sin(x) - 4\,cos(x)\right]' = 2\,cos(x) + 4\,sin(x)
                     \]
                 </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[
-                \]
-                <div class="gray">
-                    Deriviamo il primo termine.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(\color{blue}{}sin(x)\color{black}{}\,cos(x)\right)' = 2\big[
-                \]
-                <div class="gray">
-                    Deriviamo il primo termine.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[\color{blue}{}cos(x)\color{black}{}
-                \]
-                <div class="gray">
-                    Deriviamo il primo termine.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos(x)
-                \]
-                <div class="gray">
-                    Copiamo il secondo termine così com'è.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,\color{blue}{}cos(x)\color{black}{}\right)' = 2\big[cos(x)
-                \]
-                <div class="gray">
-                    Deriviamo il primo termine.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos(x) \cdot \color{blue}{}cos(x)\color{black}{}
-                \]
-                <div class="gray">
-                    Deriviamo il primo termine.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[\color{red}{}cos(x) \cdot cos(x)\color{black}{}
-                \]
-                <div class="gray">
+            </li>
+            <br>
+            <li>
+                \(
+                \,\,\,\,\,\left[3\,e^x + \dfrac{1}{2}\,ln(x)\right]'
+                \)
 
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[\color{red}{}cos^{2}(x)
-                \]
-                <div class="gray">
+                <br>
+                <br>
 
+                <button id="hintWYhpqgUquk-button" onclick="showHint(`WYhpqgUquk`)">Soluzione</button>
+                <div id="hintWYhpqgUquk" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
+                    \[
+                    \left[3\,e^x + \dfrac{1}{2}\,ln(x)\right]' = 3\,e^x + \dfrac{1}{2x}
+                    \]
                 </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) +
-                \]
-                <div class="gray">
-
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) +
-                \]
-                <div class="gray">
-                    Copiamo il primo fattore così com'è.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(\color{blue}{}sin(x)\color{black}{}\,cos(x)\right)' = 2\big[cos^{2}(x) +
-                \]
-                <div class="gray">
-                    Copiamo il primo fattore così com'è.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) + \color{blue}{}sin(x)\color{black}{}
-                \]
-                <div class="gray">
-                    Copiamo il primo fattore così com'è.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) + sin(x)
-                \]
-                <div class="gray">
-                    Deriviamo il secondo fattore.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,\color{blue}{}cos(x)\color{black}{}\right)' = 2\big[cos^{2}(x) + sin(x)
-                \]
-                <div class="gray">
-                    Deriviamo il secondo fattore.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) + sin(x)\color{blue}{}(-sin(x))\color{black}{}
-                \]
-                <div class="gray">
-                    Deriviamo il secondo fattore.
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) \color{red}{}+\color{black}{}
-                sin(x)(\color{red}{}-\color{black}{}sin(x))
-                \]
-                <div class="gray">
-
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) \color{red}{}-\color{black}{} sin(x)sin(x)
-                \]
-                <div class="gray">
-
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) - \color{red}{}sin(x)sin(x)
-                \]
-                <div class="gray">
-
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) - \color{red}{}sin^2(x)
-                \]
-                <div class="gray">
-
-                </div>
-            </div>
-            <div class="slidefeFMAuxCXh formula">
-                \[
-                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) - sin^2(x)\big]
-                \]
-                <div class="gray">
-
-                </div>
-            </div>
-
-        </div>
-        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-            <button id="previousSlide-buttonfeFMAuxCXh" onclick="previousSlide(`feFMAuxCXh`)">Indietro</button>
-            <button onclick="toggleFullscreen('feFMAuxCXh')">⛶</button>
-            <button id="nextSlide-buttonfeFMAuxCXh" onclick="nextSlide(`feFMAuxCXh`)">Avanti</button>
-        </div>
-
-
-        <br>
-        <br>
-        <br>
-
-        <h3 class="green">Esercizio</h3>
-        <div>
-            \[
-            \left(3x^2 \cdot ln(x)\right)'
-            \]
-        </div>
-
-        <br>
-
-        <div class="gray">
-            <b>Soluzione:</b>\(\,\,3x\left(2ln(x) + 1\right)\)
-        </div>
+            </li>
+        </ol>
     </div>
 
 <br>
@@ -327,234 +166,24 @@
 <br>
 <br>
 
-<h3 class="green">Esercizio</h3>
-            <div>
-                <div id="slide-containerryzfoFFujJ" class="slide-container ryzfoFFujJ grayBorder">
-                    <div class="slideryzfoFFujJ">
-                        \[\left(x^2 \cdot e^x\right)'\]
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = \)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Scriviamo la derivata del primo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(\color{blue}{x^2}\color{black}{} \cdot e^x\right)' = \)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Scriviamo la derivata del primo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = \color{blue}{(x^2)'} \)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Scriviamo la derivata del primo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = \color{blue}{2x} \)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Scriviamo la derivata del primo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Moltiplichiamolo per il secondo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot \color{blue}{e^x}\color{black}{}\right)' = 2x \)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Moltiplichiamolo per il secondo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, \color{blue}{e^x} \)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Moltiplichiamolo per il secondo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Scriviamo il simbolo di addizione.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x \,\color{blue}{+}\,\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Scriviamo il simbolo di addizione.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x \,+\,\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Trascriviamo il primo fattore così come è.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(\color{blue}{x^2}\color{black}{} \cdot e^x\right)' = 2x \, \cdot \, e^x \,+\,\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Trascriviamo il primo fattore così come è.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x \,+\, \color{blue}{x^2}\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Trascriviamo il primo fattore così come è.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x \,+\, x^2\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Moltiplichiamo per la derivata del secondo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot \color{blue}{e^x}\color{black}{}\right)' = 2x \, \cdot \, e^x \,+\, x^2\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Moltiplichiamo per la derivata del secondo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x \,+\, x^2 \cdot \color{blue}{(e^x)'}\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Moltiplichiamo per la derivata del secondo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x \,+\, x^2 \cdot \color{blue}{e^x}\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Moltiplichiamo per la derivata del secondo fattore.
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2x \, \cdot \, e^x \,+\, x^2 \cdot e^x\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Osserviamo che è possibile raccogliere a fattor comune il termine \(xe^x\)
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = 2\color{red}{x}\color{black}{} \, \cdot \,
-                        \color{red}{e^x}\color{black}{} \,+\, \color{red}{x}\color{black}{}^2 \cdot \color{red}{}e^x\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Osserviamo che è possibile raccogliere a fattor comune il termine \(xe^x\)
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = \color{red}{x\,e^x}\color{black}{}\left(2 + x\right)\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            Osserviamo che è possibile raccogliere a fattor comune il termine \(xe^x\)
-                        </div>
-                    </div>
-                    <div class="slideryzfoFFujJ">
-                        \(\left(x^2 \cdot e^x\right)' = x\,e^x\,\left(2 + x\right)\)
-                        <br>
-                        <br>
-                        <div class="gray">
-                            \(\)
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-                    <button id="previousSlide-buttonryzfoFFujJ" onclick="previousSlide(`ryzfoFFujJ`)">Indietro</button>
-                    <button onclick="toggleFullscreen('ryzfoFFujJ')">⛶</button>
-                    <button id="nextSlide-buttonryzfoFFujJ" onclick="nextSlide(`ryzfoFFujJ`)">Avanti</button>
-                </div>
-            </div>
-
-            <br>
-            <br>
-            <hr>
-            <br>
-            <br>
-
-<br>
-<br>
-<hr>
-<br>
-<br>
-
-<h3 class="green">Esercizio</h3>
-            <div>
-                \[
-                \left(2\,sin(x)\,cos(x)\right)'
-                \]
-            </div>
-
-            <br>
-
-            <div class="gray">
-                <b>Soluzione</b>: \(\,\,\, 2cos^2(x) - 2sin^2(x)\)
-            </div>
-
-            <br>
-            <br>
-            <hr>
-            <br>
-            <br>
-
-<br>
-<br>
-<hr>
-<br>
-<br>
-
-<h3 class="green">Esercizio</h3>
-    <br>
-    <div>
-        Calcolare la derivata della funzione
-        \[
-        f(x) = \sqrt{x}\,ln(x)
-        \]
+<h3 class="yellow">\(\boldsymbol{\big[x^{\alpha}\big]' = \alpha\,x^{\alpha - 1}}\)</h3>
+    <div class="esempi-container">
+        <b style="font-size: 1.3rem;">caso \(\alpha\) intero positivo</b>
         <br>
-        <button id="hintbTMIUDpnvG-button" onclick="showHint(`bTMIUDpnvG`)">Soluzione</button>
-        <div id="hintbTMIUDpnvG" class="hint gray" style="display: none;">
-            <b class="gray">Soluzione</b>
-            <br>
-            \[
-                f'(x)=\frac{ln(x) + 2}{2\,\sqrt{x}}
-            \]
-        </div>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/N1CW1wDLxMM?si=62Q3MZ0MgYuereop" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <b style="font-size: 1.3rem;">caso \(\alpha\) intero negativo</b>
+        <br>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/kDpE93N0kVI?si=-GDzzaKSaIAaZJOD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <b>Caso \(\alpha\) frazionario</b>
+        <br>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/n2HpWwH9Wac?si=mqdEFB7RU57OlCdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
     </div>
 
 <br>
@@ -566,19 +195,50 @@
 <h3 class="green">Esercizio</h3>
     <br>
     <div>
-        Calcolare la derivata della funzione
-        \[
-        f(x) = 4x^3\,e^x
-        \]
+        Svolgere le seguenti derivate:
         <br>
-        <button id="hintnUqdljhgnS-button" onclick="showHint(`nUqdljhgnS`)">Soluzione</button>
-        <div id="hintnUqdljhgnS" class="hint gray" style="display: none;">
-            <b class="gray">Soluzione</b>
+        <br>
+        <ol type="A" style="font-weight: bold;">
+            <li>
+                \(
+                \,\,\,\,\,\left[6x^2 - x + \sqrt{x^3}\right]'
+                \)
+
+                <br>
+                <br>
+
+                <button id="hintxRspfabVjo-button" onclick="showHint(`xRspfabVjo`)">Soluzione</button>
+                <div id="hintxRspfabVjo" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
+                    <div class="formula">
+                        \[
+                        \left[6x^2 - x + \sqrt{x^3}\right]' = 12x - 1 + \dfrac{3}{2}\sqrt{x}
+                        \]
+                    </div>
+                </div>
+            </li>
             <br>
-            \[
-                f'(x) = 4x^{2}\,e^{x}\,(3+x)
-            \]
-        </div>
+            <li>
+                \(
+                \,\,\,\,\,\left[\dfrac{4}{x^2} - \dfrac{5}{x} + 8e^x\right]'
+                \)
+
+                <br>
+                <br>
+
+                <button id="hintDXwKLIgnuC-button" onclick="showHint(`DXwKLIgnuC`)">Soluzione</button>
+                <div id="hintDXwKLIgnuC" class="hint gray" style="display: none;">
+                    <b class="gray">Soluzione</b>
+                    <br>
+                    <div class="formula">
+                        \[
+                        \left[\dfrac{4}{x^2} - \dfrac{5}{x} + 8e^x\right]' = -\dfrac{8}{x^{3}}+\dfrac{5}{x^{2}}+8e^{x}
+                        \]
+                    </div>
+                </div>
+            </li>
+        </ol>
     </div>
 
     <script src="../../js/hintAndSlide.js"></script>
