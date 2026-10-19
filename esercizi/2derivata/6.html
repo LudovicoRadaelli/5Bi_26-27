@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">6</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Derivata della funzione \(\boldsymbol{f(x) = \left|x\right|}\)</h3>
+            <div class="esempi-container">
+                Consideriamo la funzione
+                \[
+                f(x)= \left|x\right|
+                \]
+                Calcoliamone la derivata. Per farlo ricordiamo la definizione dell'operazione modulo:
+                \[
+                \left|x\right| =
+                \begin{cases}
+                x \quad &amp;se\,\,\, x \geq 0
+                \\\\
+                -x \quad &amp;se\,\,\, x \lt 0
+                \end{cases}
+                \]
+                Per calcolare la derivata distinguiamo i casi:
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        se \(\,x \gt 0\,\) la funzione \(\left|x\right| = x\), quindi
+                        \[
+                        \left|x\right|' = (x)' = 1
+                        \]
+                    </li>
+                    <br>
+                    <li>
+                        se \(\,x \lt 0\,\) la funzione \(\left|x\right| = -x\), quindi
+                        \[
+                        \left|x\right|' = (-x)' = -1
+                        \]
+                    </li>
+                </ul>
+                <br>
+                Quindi la derivata della funzione \(f(x)= \left|x\right|\) è
+                \[
+                f'(x) =
+                \begin{cases}
+                -1 \,\, &amp;se\,\,x \lt 0
+                \\\\
+                1 \,\, &amp;se\,\,x \gt 0
+                \end{cases}
+                \]
+                Osserviamo che esistono due modi più compatti di scrivere la derivata del modulo.
+                \[
+                f'(x) = \dfrac{\left|x\right|}{x} \qquad \text{oppure} \qquad f'(x) = \dfrac{x}{\left|x\right|}
+                \]
+
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                \[
+                \left(\dfrac{x}{ln(x)}\right)'
+                \]
+            </div>
+
+            <br>
+
+<button id="hintTcTLOunKBF-button" onclick="showHint(`TcTLOunKBF`)">Soluzione</button>
+        <div id="hintTcTLOunKBF" class="hint gray" style="display: none;">     
+            <b class="gray">Soluzione</b> 
+             \[\dfrac{ln(x) - 1}{ln^2(x)}\]
+        </div>
+
+            
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                \[
+                \left(\dfrac{x^3}{cos(x)}\right)'
+                \]
+            </div>
+
+            <br>
+
+<button id="hintSIQSgAiXMN-button" onclick="showHint(`SIQSgAiXMN`)">Soluzione</button>
+        <div id="hintSIQSgAiXMN" class="hint gray" style="display: none;">     
+            <b class="gray">Soluzione</b> 
+\[\dfrac{x^2}{cos^2(x)} (3\,cos(x) - x\,sin(x))\]
+        </div>
+
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                \[
+                \left(x + \dfrac{2\,ln(x)}{x^2}\right)'
+                \]
+            </div>
+
+            <br>
+
+            <button id="hintWmnroHmgLc-button" onclick="showHint(`WmnroHmgLc`)">Soluzione</button>
+            <div id="hintWmnroHmgLc" class="hint gray" style="display: none;">     
+                <b class="gray">Soluzione</b> 
+                \[1 + \dfrac{2\,(1 - 2\,ln(x))}{x^3}\]
+            </div>
+
+
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                \[
+                \left[\dfrac{x^2 -3}{x^2 + 4}\right]'
+                \]
+            </div>
+
+            <br>
+
+            <button id="hintTqAKWwXfyf-button" onclick="showHint(`TqAKWwXfyf`)">Soluzione</button>
+            <div id="hintTqAKWwXfyf" class="hint gray" style="display: none;">     
+                <b class="gray">Soluzione</b> 
+                \[\dfrac{14x}{(x^2 + 4)^2}\]
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                \[
+                \left[e^x\,(3cos(x) + 2x)\right]'
+                \]
+            </div>
+
+            <br>
+
+            <button id="hintMlsjbEuvjJ-button" onclick="showHint(`MlsjbEuvjJ`)">Soluzione</button>
+            <div id="hintMlsjbEuvjJ" class="hint gray" style="display: none;">     
+                <b class="gray">Soluzione</b> 
+                \[e^x \, \left(2x - 3sin(x) + 3cos(x) + 2\right)\]             
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
