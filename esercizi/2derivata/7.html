@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">    
+    <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/mathjax-config.js"></script>
-    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
     <script src="../argomenti.js"></script>
@@ -20,6 +22,103 @@
     </h1>
 
     <br>
+
+
+    <h3 class="yellow">Derivata di una funzione composta</h3>
+    <div class="esempi-container">
+        <b>Come spiegarlo durnate l'interrogazione</b>
+        <div id="slide-container4" class="slide-container grayBorder">
+            <div class="slide4 formula">
+                \[
+                \left[f(g(x))\right]' = f'(g(x)) \cdot g'(x)
+                \]
+                La derivata di \(f\) di \(g\) è uguale alla derivata di \(f\) valutata in \(g\) per la derivata di
+                \(g\).
+            </div>
+            <div class="slide4 formula">
+                \[
+                \color{blue}{}\left[\color{black}{}f(g(x))\color{blue}{}\right]'\color{black}{} = f'(g(x)) \cdot g'(x)
+                \]
+                <span style="color: blue">La derivata di</span> \(f\) di \(g\) è uguale alla derivata di \(f\) valutata
+                in \(g\) per la derivata di \(g\).
+            </div>
+            <div class="slide4 formula">
+                \[
+                \left[\color{blue}{}f(g(x))\color{black}{}\right]' = f'(g(x)) \cdot g'(x)
+                \]
+                La derivata di <span style="color: blue">\(f\) di \(g\)</span> è uguale alla derivata di \(f\) valutata
+                in \(g\) per la derivata di \(g\).
+            </div>
+            <div class="slide4 formula">
+                \[
+                \left[f(g(x))\right]' \color{blue}{}=\color{black}{} f'(g(x)) \cdot g'(x)
+                \]
+                La derivata di \(f\) di \(g\) <span style="color: blue">è uguale</span> alla derivata di \(f\) valutata
+                in \(g\) per la derivata di \(g\).
+            </div>
+            <div class="slide4 formula">
+                \[
+                \left[f(g(x))\right]' = \color{blue}{}f'(\color{black}{}g(x)\color{blue}{})\color{black}{} \cdot g'(x)
+                \]
+                La derivata di \(f\) di \(g\) è uguale <span style="color: blue">alla derivata di \(f\)</span> valutata
+                in \(g\) per la derivata di \(g\).
+            </div>
+            <div class="slide4 formula">
+                \[
+                \left[f(g(x))\right]' = f'(\color{blue}{}g(x)\color{black}{}) \cdot g'(x)
+                \]
+                La derivata di \(f\) di \(g\) è uguale alla derivata di \(f\) <span style="color: blue">valutata in
+                    \(g\)</span> per la derivata di \(g\).
+            </div>
+            <div class="slide4 formula">
+                \[
+                \left[f(g(x))\right]' = f'(g(x)) \color{blue}{}\cdot g'(x)
+                \]
+                La derivata di \(f\) di \(g\) è uguale alla derivata di \(f\) valutata in \(g\) <span
+                    style="color: blue">per la derivata di \(g\)</span>.
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+            <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h3 class="green">Esercizio guida</h3>
+        <div>
+            \[
+            \left[ln\left(3x - 1\right)\right]'
+            \]
+        </div>
+
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/ZZZk7nzPUDU?si=vn3a4xDgmfxnhQSt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h3 class="green">Esercizio guida</h3>
+        <div>
+            \[
+            \left[2cos\left(-3x^2 -6\right)\right]'
+            \]
+        </div>
+
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/Q8eZ3E-3Ap0?si=mhf-GEoK14SldbE0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+
+    </div>
 
     <h3 class="green">Esercizio</h3>
     <div>
@@ -44,16 +143,19 @@
     <div id="hintCXXywcdMvb" class="hint gray" style="display: none;">
         <b class="gray">Svolgimento</b>
         <br>
-        <iframe style="width: 100%;" src="https://www.youtube.com/embed/Q8eZ3E-3Ap0?si=mhf-GEoK14SldbE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/Q8eZ3E-3Ap0?si=mhf-GEoK14SldbE0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-<br>
-<br>
-<hr>
-<br>
-<br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
 
-<h3 class="green">Esercizio</h3>
+    <h3 class="green">Esercizio</h3>
     <div>
         \[
         \left[ln\left(3x - 1\right)\right]'
@@ -76,16 +178,19 @@
     <div id="hintJIPJWoXOHZ" class="hint gray" style="display: none;">
         <b class="gray">Svolgimento</b>
         <br>
-        <iframe style="width: 100%;" src="https://www.youtube.com/embed/ZZZk7nzPUDU?si=vn3a4xDgmfxnhQSt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/ZZZk7nzPUDU?si=vn3a4xDgmfxnhQSt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-<br>
-<br>
-<hr>
-<br>
-<br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
 
-<h3 class="green">Esercizio</h3>
+    <h3 class="green">Esercizio</h3>
     <div>
         \[
         \left[\sqrt[3]{x^2 -1}\right]'
@@ -108,7 +213,10 @@
     <div id="hinteVoexwrrnx" class="hint gray" style="display: none;">
         <b class="gray">Svolgimento</b>
         <br>
-        <iframe style="width: 100%;" src="https://www.youtube.com/embed/eOU1qU49xzE?si=nISgFgWqEydvBKz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/eOU1qU49xzE?si=nISgFgWqEydvBKz0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <script src="../../js/hintAndSlide.js"></script>
@@ -122,4 +230,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
