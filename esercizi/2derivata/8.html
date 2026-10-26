@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">8</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+            <br>
+            <div>
+                Calcolare la derivata della funzione composta
+                \[
+                f(x) = ln\left(\dfrac{x}{x - 1}\right)
+                \]
+            </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="yellow">Funzioni crescenti e decrescenti e derivate</h3>
+            <div class="esempi-container">
+                Per definizione una funzione <b>crescente</b> in un intervallo \(I\) se e solo se
+                per ogni \(a, b \in I\)
+                \[
+                a \lt b \,\,\,\Longrightarrow\,\,\, f(a) \lt f(b)
+                \]
+                <img src="img/img_8_1.png" style="border: 0;">
+                <br>
+                In altre parole, presi due valori successivi \(a\) e \(b\) in \(I\), il valore assunto da \(f\) nel
+                punto a
+                a sinistra, \(f(a)\), è minore del valore assunto da \(f\) nel punto a destra, \(f(b)\): scorrendo verso
+                destra la funzione cresce.
+
+                <br>
+                <br>
+                In modo analogo, una funzione <b>decrescente</b> in un intervallo \(I\) se e solo se
+                per ogni \(a, b \in I\)
+                \[
+                a \lt b \,\,\,\Longrightarrow\,\,\, f(a) \gt f(b)
+                \]
+
+                <b>Teorema</b>
+                <br>
+                <div class="grayBorder">
+                    Sia \(y = f(x)\) una funzione definita su un intervallo \(I\) ed ivi continua e derivabile.
+                    <br>
+                    <br>
+                    \(\boldsymbol{1})\,\,\) Se \(f'(x) \gt 0\) per ogni \(x \in I\) allora \(f\) è crescente in \(I\)
+                    <br>
+                    <br>
+                    \(\boldsymbol{2})\,\,\) Se \(f'(x) \lt 0\) per ogni \(x \in I\) allora \(f\) è decrescente in \(I\)
+                </div>
+                <br>
+                <b>Applicazioni del teorema</b>
+                <br>
+                Consideriamo la funzione
+                \[
+                f(x) = \dfrac{x^3}{3} -x + 1
+                \]
+                Essendo polinomiale il suo dominio è \(\mathbb{R}\) ed in questo insieme è continua e derivabile.
+                La sua derivata è
+                \[
+                f'(x) = x^2 -1
+                \]
+                Studiamo il <u>segno della derivata</u>. Questo ci permettera di capire gli intervalli in cui la
+                funzione è
+                crescente o decrescente.
+                \[
+                \begin{align*}
+                &amp;f'(x) \gt 0
+                \\\\
+                &amp;x^2 -1 \gt 0
+                \end{align*}
+                \]
+                usando il metodo della parabola troviamo che il segno al variare della \(x\) è il seguente
+                <br>
+                <br>
+                <img src="img/img_8_2.png" style="width: 50%; border: 0;">
+                <br>
+
+                Questo ci suggerisce che la funzione è
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        <u>crescente</u> negl'intervalli \((-\infty\,,\,\,-1)\) e \((1\,,\,\,+\infty)\) dove la
+                        derivata ha segno positivo
+                    </li>
+                    <br>
+                    <li>
+                        <u>decrescente</u> in \((-1\,,\,\,1)\) dove la derivata ha segno negativo.
+                    </li>
+                </ul>
+                <br>
+                Utilizzando il linguaggio grafico possiamo scrivere
+                <br>
+                <br>
+                <img src="img/img_8_3.png" style="width: 70%; border: 0;">
+            </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio guida</h3>
+            <div>
+                Studiare gli intervalli di monotonia della funzione
+                \[
+                f(x) = \dfrac{1}{3}x^3 - \dfrac{5}{2}x^2 + 6x + 1
+                \]
+
+                <b>Svolgimento</b>
+                <br>
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/UBFS4QIaVzk?si=SWR51-WTCHzYRguk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                Studiare gli intervalli di monotonia della funzione
+                \[
+                f(x) = x^3 + 3x^2 + 7x + 10
+                \]
+            </div>
+
+            <br>
+
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                La funzione è crescente per ogni \(x \in \mathbb{R}\)
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                Dopo averne individuato il dominio, studiare gli intervalli di monotonia della funzione
+                \[
+                f(x) = \dfrac{x + 2}{x}
+                \]
+            </div>
+
+            <br>
+
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                La funzione è decrescente per \(x \in (-\infty\,,\,\,+\infty)\)
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
