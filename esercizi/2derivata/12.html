@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">12</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Teorema di Fermat</h3>
+    <div class="esempi-container">
+
+        <b>Teorema di Fermat</b>
+        <div class="grayBackground">
+            Sia \(f:[a\,,\,\,b] \longrightarrow \mathbb{R}\). Se
+            <br>
+            <br>
+            \(\triangleright\,\,\,\) \(c \in (a\,,\,\,b)\) un punto di massimo (oppure minimo) relativo per \(f\),
+            <br>
+            <br>
+            \(\triangleright\,\,\,\) \(f\) derivabile in \(c\),
+            <br>
+            <br>
+            allora \(f'(c) = 0\).
+        </div>
+
+        <br>
+
+        <b style="font-size: 1rem;">dimostrazione</b>
+        <br>
+        Svolgiamo la dimostrazione nel caso in cui \(c\) sia un punto di massimo relativo. L'altro caso
+        si dimostra in modo del tutto analogo.
+        <br>
+
+        Il nostro obiettivo è far vedere che
+        \[
+        f'(c) = 0
+        \]
+        Per farlo useremo una tecnica standard: dimostreremo separatamente che
+        \[
+        f'(c) \leq 0 \quad \text{e} \quad f'(c) \geq 0
+        \]
+        Questo ci permetterà di concludere che \(f'(c)\) è proprio uguale a \(0\).
+        <br>
+        <br>
+        <b style="font-size: 1rem;">Caso \(\boldsymbol{h} \gt 0\)</b>
+        <br>
+        Siccome per ipotesi \(c\) è un massimo relativo, abbiamo che per valori abbastanza piccoli di \(h\) si ha
+        \[
+        f(c + h) \leq f(c)
+        \]
+        Infatti, appena ci discostiamo da \(c\) di un incremento \(h\), la funzione assume valore più piccolo
+        di \(f(c)\). Portando \(f(c)\) al primo membro otteniamo
+        \[
+        f(c + h) - f(c) \leq 0
+        \]
+        Dividiamo entrambi i membrie per un incremento \(h\) <u>positivo</u>.
+        \[
+        \begin{align*}
+        \dfrac{f(c + h) - f(c)}{h} &amp;\leq \dfrac{0}{h}
+        \\\\
+        \dfrac{f(c + h) - f(c)}{h} &amp;\leq 0
+        \end{align*}
+        \]
+        Passiamo al limite per \(h \to 0^{+}\) nella diseguaglianza appena scritta
+        \[
+        \lim_{h \to 0^{+}} \, \dfrac{f(c + h) - f(c)}{h} \leq \lim_{h \to 0^{+}} \, 0
+        \]
+        Per ipotesi, la derivata di \(f\) in \(x = c\) esiste, ovvero il membro sinistro della diseguaglianza
+        tende a \(f'(c)\). Il membro destro invece tende chiaramente a \(0\). Possiamo quindi riscrivere
+        \[
+        f'(c) \leq 0 \qquad \color{red}{}\boxed{1}
+        \]
+        Abbiamo così scoperto che la derivata \(f'(c)\) è un numero negativo o uguale a \(0\).
+        <br>
+        <br>
+
+        <b style="font-size: 1rem;">Caso \(\boldsymbol{h \lt 0}\)</b>
+        <br>
+        Come prima, per ipotesi \(c\) è un massimo relativo, abbiamo che per valori abbastanza piccoli di \(h\) si ha
+        \[
+        f(c + h) \leq f(c)
+        \]
+        e di conseguenza
+        \[
+        f(c + h) - f(c) \leq 0
+        \]
+        Dividiamo entrambi i membrie per un incremento \(h\) <u>negativo</u>. Siccome stiamo
+        dividendo entrambi i membri di una diseguaglianza per un numero negativo, si ribalta il verso
+        della diseguaglianza.
+        \[
+        \begin{align*}
+        \dfrac{f(c + h) - f(c)}{h} &amp;\geq \dfrac{0}{h}
+        \\\\
+        \dfrac{f(c + h) - f(c)}{h} &amp;\geq 0
+        \end{align*}
+        \]
+        Passiamo al limite per \(h \to 0^{-}\) nella diseguaglianza appena scritta
+        \[
+        \lim_{h \to 0^{-}} \, \dfrac{f(c + h) - f(c)}{h} \geq \lim_{h \to 0^{-}} \, 0
+        \]
+        Per ipotesi, la derivata di \(f\) in \(x = c\) esiste, ovvero il membro sinistro della diseguaglianza
+        tende a \(f'(c)\). Il membro destro invece tende chiaramente a \(0\). Possiamo quindi riscrivere
+        \[
+        f'(c) \geq 0 \qquad \color{red}{}\boxed{2}
+        \]
+        Abbiamo così scoperto che la derivata \(f'(c)\) è un numero positivo o uguale a \(0\).
+        <br>
+        <br>
+        Mettiamo insieme i tasselli:
+        \[
+        f'(c) \overset{\color{red}{}\boxed{1}}{\leq} 0 \quad \text{e contemporaneamente} \quad f'(c)
+        \overset{\color{red}{}\boxed{2}}{\geq} 0
+        \]
+        Ma allora dovrà essere \(f'(c) = 0\). Abbiamo così dimostrato la tesi. \(\,\,\, \boxed{}\)
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="yellow">Definizione di continuità</h3>
+      <div class="esempi-container">
+
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/WlxiojSmOhA?si=eaYSWm543CFsB8b9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+        <br>
+
+        <div class="grayBackground">
+          Consideriamo una funzione \(f:\,D \rightarrow \mathbb{R}\) ed un punto \(c \in D\).
+          <br>
+          La funzione \(f\) si dice <b>continua in \(\boldsymbol{c}\)</b> se
+          \[
+          \lim_{x \to c} f(x) = f(c)
+          \]
+        </div>
+
+        <br>
+        Vediamo come interpretare questa condizione:
+
+        <br>
+        <br>
+        <div id="slide-containereHiGBODnjM" class="slide-container eHiGBODnjM grayBorder">
+          <div class="slideeHiGBODnjM">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+              <div style=" width: fit-content;display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="width: 100%;">
+                  il valore al quale tendono gli
+                  output per input \(x\) vicini a \(c\)
+                </div>
+                <div style="width: 100%;">
+                  è uguale
+                </div>
+                <div style="width: 100%;">
+                  all'output assunto se l'input è esattamente \(c\).
+                </div>
+              </div>
+              <div>
+                \[
+                \lim_{x \to c} f(x) = f(c)
+                \]
+              </div>
+            </div>
+          </div>
+          <div class="slideeHiGBODnjM">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+              <div style=" width: fit-content;display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="width: 100%; color: red;">
+                  il valore al quale tendono gli
+                  output per input \(x\) vicini a \(c\)
+                </div>
+                <div style="width: 100%;">
+                  è uguale
+                </div>
+                <div style="width: 100%;">
+                  all'output assunto se l'input è esattamente \(c\).
+                </div>
+              </div>
+              <div>
+                \[
+                \color{red}{\lim_{x \to c} f(x)}\color{black}{} = f(c)
+                \]
+              </div>
+            </div>
+          </div>
+          <div class="slideeHiGBODnjM">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+              <div style=" width: fit-content;display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="width: 100%;">
+                  il valore al quale tendono gli
+                  output per input \(x\) vicini a \(c\)
+                </div>
+                <div style="width: 100%; color: red;">
+                  è uguale
+                </div>
+                <div style="width: 100%;">
+                  all'output assunto se l'input è esattamente \(c\).
+                </div>
+              </div>
+              <div>
+                \[
+                \lim_{x \to c} f(x) \color{red}{}=\color{black}{} f(c)
+                \]
+              </div>
+            </div>
+          </div>
+          <div class="slideeHiGBODnjM">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+              <div style=" width: fit-content;display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="width: 100%;">
+                  il valore al quale tendono gli
+                  output per input \(x\) vicini a \(c\)
+                </div>
+                <div style="width: 100%;">
+                  è uguale
+                </div>
+                <div style="width: 100%; color: red;">
+                  all'output assunto se l'input è esattamente \(c\).
+                </div>
+              </div>
+              <div>
+                \[
+                \lim_{x \to c} f(x) = \color{red}{}f(c)
+                \]
+              </div>
+            </div>
+          </div>
+          <div class="slideeHiGBODnjM">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+              <div style=" width: fit-content;display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="width: 100%;">
+                  il valore al quale tendono gli
+                  output per input \(x\) vicini a \(c\)
+                </div>
+                <div style="width: 100%;">
+                  è uguale
+                </div>
+                <div style="width: 100%;">
+                  all'output assunto se l'input è esattamente \(c\).
+                </div>
+              </div>
+              <div>
+                \[
+                \lim_{x \to c} f(x) = f(c)
+                \]
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+          <button id="previousSlide-buttoneHiGBODnjM" onclick="previousSlide(`eHiGBODnjM`)">Indietro</button>
+          <button id="nextSlide-buttoneHiGBODnjM" onclick="nextSlide(`eHiGBODnjM`)">Avanti</button>
+        </div>
+
+        <br>
+
+        Intuitivamente possiamo dire che una funzione è continua in \(c\) i valori che la funzione assume <span style="border-bottom: 0.01rem solid black;">vicino a \(c\)</span>
+        sono molto simili al valore che la funzione assume <span style="border-bottom: 0.01rem solid black;">esattamente
+          in \(c\)</span>
+
+      </div>
+
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="yellow">Punti di discontinuità</h3>
+      <div class="esempi-container">
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/h1cFTsFBOmY?si=KgdyyP-mkk6wtRqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+        <br>
+        <br>
+
+        Abbiamo visto che una funzione è continua in \(c\) se
+        \[
+        \lim_{x \to c} f(x) = f(c)
+        \]
+        Di conseguenza una funzione è discontinua se l'uguaglianza appena scritta non è vera.
+        <br>
+        Cosa la può rendere falsa?
+        <br>
+        Quando scriviamo quest'uguaglianza stiamo implicitamente assumendo che siano soddisfatte
+        alcune condizioni:
+
+        <br>
+        <br>
+        <div id="slide-containerNYnQznUDzA" class="slide-container NYnQznUDzA grayBorder">
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>esiste</b>, altrimenti il membro sinistro
+                dell'uguaglianza non sarebbe definito (sarebbe come scrivere \(\sqrt{-5}\), privo di senso)
+              </li>
+              <br>
+              <li style="visibility:hidden;">
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>è finito</b>, altrimenti non potrebbe
+                essere uguale a \(f(c)\) che è un qualche output finito.
+              </li>
+            </ul>
+          </div>
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>esiste</b>, altrimenti il membro sinistro
+                dell'uguaglianza non sarebbe definito (sarebbe come scrivere \(\sqrt{-5}\), privo di senso)
+              </li>
+              <br>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>è finito</b>, altrimenti non potrebbe
+                essere uguale a \(f(c)\) che è un qualche output finito.
+              </li>
+            </ul>
+          </div>
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>esiste</b><span style="visibility: hidden;">,
+                  altrimenti il membro sinistro
+                  dell'uguaglianza non sarebbe definito (sarebbe come scrivere \(\sqrt{-5}\), privo di senso)</span>
+              </li>
+              <br>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>è finito</b><span style="visibility: hidden;">,
+                  altrimenti non potrebbe
+                  essere uguale a \(f(c)\) che è un qualche output finito.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>esiste finito</b>
+              </li>
+            </ul>
+
+            <br>
+
+            <div class="gray" style="visibility: hidden;">
+              Abbiamo visto che se il limite esiste, allora esiste il limite <b>da sinistra</b>, quello <b>da destra</b>
+              e coincidono.
+            </div>
+          </div>
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>esiste finito</b>
+              </li>
+            </ul>
+
+            <br>
+
+            <div class="gray">
+              Abbiamo visto che se il limite esiste, allora esiste il limite <b>da sinistra</b>, quello <b>da destra</b>
+              e coincidono.
+            </div>
+          </div>
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c} f(x)\) <b>esiste finito</b>
+              </li>
+            </ul>
+
+            <br>
+
+            <div class="gray">
+              Abbiamo visto che se il limite esiste, allora esiste il limite <b>da sinistra</b>, quello <b>da destra</b>
+              e coincidono.
+              <br>
+              Possiamo quindi "espandere" la condizione sopra scritta in tre condizioni.
+            </div>
+          </div>
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c^{+}} f(x)\) <b>esiste finito</b>
+              </li>
+              <br>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c^{-}} f(x)\) <b>esiste finito</b>
+              </li>
+              <br>
+              <li>
+                \(\displaystyle \lim_{x \to c^{-}} f(x) = \lim_{x \to c^{+}} f(x)\)
+              </li>
+            </ul>
+
+            <br>
+
+            <div class="gray">
+              Abbiamo visto che se il limite esiste, allora esiste il limite <b>da sinistra</b>, quello <b>da destra</b>
+              e coincidono.
+              <br>
+              Possiamo quindi "espandere" la condizione sopra scritta in tre condizioni.
+            </div>
+          </div>
+          <div class="slideNYnQznUDzA">
+            <ul>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c^{+}} f(x)\) <b>esiste finito</b>
+              </li>
+              <br>
+              <li>
+                il limite \(\displaystyle \lim_{x \to c^{-}} f(x)\) <b>esiste finito</b>
+              </li>
+              <br>
+              <li>
+                \(\displaystyle \lim_{x \to c^{-}} f(x) = \lim_{x \to c^{+}} f(x)\)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+          <button id="previousSlide-buttonNYnQznUDzA" onclick="previousSlide(`NYnQznUDzA`)">Indietro</button>
+          <button id="nextSlide-buttonNYnQznUDzA" onclick="nextSlide(`NYnQznUDzA`)">Avanti</button>
+        </div>
+
+        <br>
+
+        Se una delle prime due condizioni non è soddisfatta abbiamo una <b>discontinuità di II specie</b>.
+        <br>
+        Se sono soddisfatte le prime due condizioni ma non la terza si ha una <b>discontinuità di salto</b>.
+        <br>
+        Se sono soddisfatte tutte e tre le condizioni, ma \(\displaystyle \lim_{x \to c} f(x) \neq f(c)\) si ha una
+        <b>discontinuità eliminabile</b>.
+      </div>
+
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
