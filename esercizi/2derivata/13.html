@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">13</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Teorema degli zeri</h3>
+      <div class="esempi-container">
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/9J7r_uhP7-U?si=SxxjkavJYAtIBF5m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/Z6RqqetC9pc?si=AMg5EHuX7DRfQfhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <div class="grayBackground">
+          Se \(f\) è una funzione continua in \([a\,,\,\,b]\) e negli estremi dell'intervallo
+          assume valori di segno opposto, allora esiste almeno una valore \(c \in (a\,,\,\,b)\) tale che \(f(c) = 0\)
+        </div>
+      </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <br>
+            <div>
+                Individuare gli intervalli di monotonia della funzione
+                \[
+                f(x) = 2x^3 + x^2 - 4x + 10
+                \]
+            </div>
+
+
+            <br>
+            <br>
+
+            <button id="hintwWsgCZNzou-button" onclick="showHint(`wWsgCZNzou`)">Svolgimento</button>
+            <div id="hintwWsgCZNzou" class="hint" style="display: none;">
+                <b class="gray">Svolgimento</b>
+                <div class="grayBorder">
+                    Individuiamo gli intervalli di monotonia della funzione
+                    \[
+                    f(x) = 2x^3 + x^2 - 4x + 10
+                    \]
+
+                    <u><b>Dominio, continuità e derivabilità</b></u>
+                    <br>
+                    La funzione è polinomiale, quindi è definita, continua e derivabile in tutto \(\mathbb{R}\).
+                    La derivata della funzione è
+                    \[
+                    f'(x) = 6x^2 + 2x - 4
+                    \]
+                    Studiamo il segno della derivata.
+                    \[
+                    \begin{align*}
+                    &amp;f'(x) \gt 0
+                    \\\\
+                    &amp;6x^2 + 2x - 4 \gt 0
+                    \\\\
+                    &amp;\text{dividiamo i coefficienti per 2}
+                    \\\\
+                    &amp;3x^2 + x - 2 \gt 0
+                    \end{align*}
+                    \]
+                    Utilizziamo il metodo della parabola per risolvere questa disequazione.
+                    L'equazione associata ha soluzioni
+                    \[
+                    \begin{align*}
+                    &amp;x = \dfrac{-1 \pm \sqrt{1 -4\cdot 3 \cdot (-2)}}{6} =
+                    \\\\
+                    &amp;x = -1 \quad \text{oppure} \quad x = \dfrac{2}{3}
+                    \end{align*}
+                    \]
+                    Poiché il coefficiente di \(x^2\) è positivo la parabola è
+                    <br>
+                    <br>
+                    <img src="img/img_13_1.png" style="border: 0; width: 50%;">
+                    <br>
+                    Dal segno di \(f'(x)\) deduciamo il seguente schema di monotonia
+                    <br>
+                    <br>
+                    <img src="img/img_13_2.png" style="border: 0; width: 50%;">
+                    <br>
+                    La funzione è
+                    <br>
+                    <br>
+                    <ul>
+                        <li>
+                            crescente negli intervalli \((-\infty\,,\,\,-1)\) e
+                            \(\left(\dfrac{2}{3}\,,\,\,+\infty\right)\)
+                        </li>
+                        <br>
+                        <li>
+                            decrescente nell'intervallo \(\left(-1\,,\,\,\dfrac{2}{3}\right)\)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                Rappresentare il grafico di una funzione \(f\) che abbia
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Derivata positiva se \(x \in (-\infty\,,\,\,0) \cup (4\,,\,\,+\infty)\)
+                    </li>
+                    <br>
+                    <li>
+                        Derivata negativa se \(x \in (0\,,\,\,4)\)
+                    </li>
+                    <br>
+                    <li>
+                        Derivata nulla se \(x = -3\), \(\,x = 0\,\) oppure \(\,x = 4\)
+                    </li>
+                </ul>
+            </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <br>
+            <div>
+                Consideriamo la funzione
+                \[
+                y = x + ln(x)
+                \]
+                Verificare che la funzione soddisfa l'equazione
+                \[
+                y'\cdot x -x -1 = 0
+                \]
+            </div>
+
+            <button id="hintBYMIhmdHJN-button" onclick="showHint(`BYMIhmdHJN`)">Svolgimento</button>
+            <div id="hintBYMIhmdHJN" class="hint" style="display: none;">
+                <b>Svolgimento</b>
+                <br>
+                <div class="grayBorder">
+                    Sostituiamo il membro destro della funzione
+                    \[
+                    \color{red}{}y \color{black}{} = \color{red}{}x + ln(x)
+                    \]
+                    nella uguaglianza
+                    \[
+                    \color{red}{}y\color{black}{}'\cdot x -x -1 = 0
+                    \]
+                    Abbiamo
+                    \[
+                    \begin{align*}
+                    &amp;\color{red}{}\left(x + ln(x)\right)\color{black}{}'\cdot x -x -1 = 0
+                    \\\\
+                    &amp;(1 +\dfrac{1}{x}) \cdot x - x - 1 = 0
+                    \\\\
+                    &amp;x + 1 - x - 1 = 0
+                    \\\\
+                    &amp;0 = 0
+                    \end{align*}
+                    \]
+                    Abbiamo così verificato che la funzione assegnata dal testo soddisfa l'uguaglianza sopra indicata.
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="gray">
+                        <b>Osservaizone a margine</b>
+                        <br>
+                        In questo esercizio la legge analitica ci viene fornita dal testo ed il nostro compito è
+                        solamente quello di
+                        controllare che essa soddisfi l'uguaglianza assegnata.
+                        <br>
+                        <br>
+                        Immaginate se invece ci fosse stato chiesto:
+                        <br>
+                        <br>
+                        <i>
+                            <u>Trovare</u> una funzione \(f\) tale che sia soddisfatta l'uguaglianza \(\,\,y'\cdot x -x
+                            -1 = 0\)
+                        </i>
+                        <br>
+                        <br>
+                        Questo tipo di problema è il culmine dell'analisi matematica e si chiama <b>equaizone
+                            differenziale</b>.
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+            <div>
+                Studiare gli intervalli di monotonia della funzione
+                \[
+                f(x) = e^{\frac{2x^2 + 6}{x - 1}}
+                \]
+            </div>
+
+            <br>
+
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                Il grafico della funzione è il seguente
+                <br>
+                <br>
+                <img src="img/img_13_3.png" style="border: 0;">
+            </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
