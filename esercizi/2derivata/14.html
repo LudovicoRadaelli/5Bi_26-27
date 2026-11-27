@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">14</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Teorema di Weierstrass</h3><div class="esempi-container">
+
+        <b>Teorema di Weierstrass</b>
+        <div class="grayBackground">
+            Se \(f\) è una funzione
+            <br>
+            \(\triangleright\,\,\) definita su \([a\,,\,\,b]\)
+            <br>
+            \(\triangleright\,\,\) continua su \([a\,,\,\,b]\),
+            <br>
+            allora ammette sia massimo che minimo.
+        </div>
+
+        <br>
+
+        Siccome la dimostrazione richiede alcuni elementi più tecnici che non abbiamo affrontato,
+        viene omessa.
+
+        <br>
+        <br>
+
+        <b>Osservazione (sulla necessità delle ipotesi)</b>
+        <br>
+        <div class="grayBorder">
+            Proviamo a rilassare le ipotesi e vediamo se il teorema rimane ancora valido.
+            <br>
+            <br>
+            \(\boxed{1}\,\,\,\,\)Proviamo ad abolire l'ipotesi di continuità.
+            <br>
+            Prendiamo ad esempio la funzione
+            \[
+            f(x) =
+            \begin{cases}
+            x \quad &amp;\text{se} \,\, 0 \leq x \lt 1
+            \\\\
+            -2 \quad &amp;\text{se} \,\, x = 1
+            \end{cases}
+            \]
+
+            che è definita su \([0\,,\,\,1]\) ma ha una discontinutà eliminabile in \(x = 1\).
+            <br>
+            <br>
+            La funzione non soddisfa la proprietà affermata in tesi, cioè non ammette massimo.
+            Infatti considerando input sempre più vicini ad \(1\), otteniamo output sempre più grandi.
+            Ma in \(x = 1\), dove ci aspettiamo di vedere raggiunto l'agognato massimo, la funzione assume
+            improvvisamente valore \(-2\).
+
+            <br>
+            <br>
+
+            \(\boxed{2}\,\,\,\,\)Proviamo a modificare la forma dell'intervallo. Consideriamo ad esempio la funzione
+            \(f(x) = x\) definita su \([0\,,\,\,1)\).
+            <br>
+            Anche in questo caso la funzione non ammette un massimo, quindi non è valida la proprietà affermata
+            nella tesi.
+
+            <br>
+            <br>
+
+            Morale della favola: le ipotesi del teorema di Weierstrass sono <u>strettamente indispensabili</u>. Non
+            appena
+            proviamo a modificarne qualcuna, la tesi non è più garantita.
+        </div>
+
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="yellow">Teorema dei valori intermedi</h3><div class="esempi-container">
+
+        <b>Teorema dei valori intermedi</b>
+        <div class="grayBackground">
+            Sia \(f:\,[a\,,\,\,b] \longrightarrow \mathbb{R}\).
+            <br>
+            Se \(f\) è continua in \([a\,,\,\,b]\) allora assume
+            tutti i valori compresi tra \(f(a)\) ed \(f(b)\).
+        </div>
+
+        <br>
+
+        <b style="font-size: 1rem;">dimostrazione</b>
+        <br>
+        Supponiamo di essere nel caso in cui la funzione nell'estremo sinistro \(a\)
+        assume un valore più piccolo di quello assunto nell'estremo destro \(b\), ovvero
+        \[f(a) \lt f(b)\]
+        Scegliamo un valore \(v\) compreso tra questi due, ovvero
+        \[
+        f(a) \lt v \lt f(b) \qquad \color{red}{}\boxed{1}
+        \]
+        Il nostro obiettivo è dimostrare che esiste \(z \in (a\,,\,\,b)\) tale che \(f(z) = v\).
+        <br>
+        <br>
+        Consideriamo la funzione \(g(x) := f(x) - v\), che ha il grafico traslato di \(v\) unità rispetto
+        a quello di \(f\). Perché abbiamo considerato questa funzione? Perché se troviamo un punto in cui \(g\) si
+        azzera,
+        in quel punto \(f\) assumerà proprio valore \(v\).
+        Infatti
+        \[
+        \begin{align*}
+        g(z) = 0
+        &amp;\Longleftrightarrow f(z) - v = 0
+        \\\\
+        &amp;\Longleftrightarrow f(z) = v \qquad \color{red}{}\boxed{2}
+        \end{align*}
+        \]
+        Osserviamo che \(g\) soddisfa le ipotesi del teorema degli zeri.
+        <br>
+        <br>
+        <ul>
+            <li>
+                Per prima cosa \(g(a) = f(a) - v \lt 0\) per la prima diseguaglianza scritta nella proprietà
+                \(\color{red}{}\boxed{1}\).
+            </li>
+            <br>
+            <li>
+                Inoltre si ha \(g(b) = f(b) - v \gt 0\) per la seconda diseguaglianza scritta nella proprietà
+                \(\color{red}{}\boxed{1}\)
+            </li>
+            <br>
+            <li>
+                Per ipotesi la funzione \(f\) è continua su \([a\,,\,\,b]\), quindi anche la funzione \(g\) lo è.
+            </li>
+        </ul>
+
+
+        <br>
+
+        Possiamo quindi applicare il teorema degli zeri, per il quale esiste un valore \(z \in (a\,,\,\,b)\) tale che
+        \(g(z) = 0\).
+        Per quanto visto in \(\color{red}{}\boxed{2}\), in tale punto la funzione \(f\) assume valore \(v\), ovvero
+        \(f(z) = v\).\(\qquad\boxed{}\)
+    </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
